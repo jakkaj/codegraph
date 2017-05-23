@@ -1,0 +1,38 @@
+{
+  "name": "codegraphfunctions",
+  "version": "1.0.0",
+  "description": "Parse C# based Git repos and create a graph database of the result",
+  "main": "build/output/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakkaj/codegraph.git"
+  },
+  "keywords": [
+    "Roslyn",
+    "C#",
+    "Graph"
+  ],
+  "author": "jakkaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakkaj/codegraph/issues"
+  },
+  "homepage": "https://github.com/jakkaj/codegraph#readme",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "crlf": "^1.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-ava": "^0.17.1",
+    "gulp-run": "^1.7.1",
+    "gulp-tsc": "^1.3.2",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "ava": "^0.19.1",
+    "inversify": "^4.1.0"
+  }
+}
