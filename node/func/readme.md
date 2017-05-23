@@ -1,0 +1,3 @@
+## Notes    
+
+Replace the contents of the `node_modules\gremlin` folder with the source code from [the Cosmos DB Gremlin fork](https://github.com/CosmosDB/gremlin-javascript), which has support for SSL and SASL, which are required for Azure Cosmos DB, but not currently supported by the driver (temporarily until the changes are accepted in the driver). Once you've checked out the repo locally run `npm install` then `npm run build` before you copy it over. 
