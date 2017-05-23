@@ -13,11 +13,7 @@ var config = g.glue.container.get<contracts.IConfigService>(contracts.tContracts
 
 class runner{
     async doRun(context){
-        var c = config.config;
-
-        var res = JSON.stringify(c);
-        context.log(res);
-        
+      
         var g = await gremlin.executeAsync('g.V().count()');
         
         var js = JSON.stringify(g);  
@@ -37,7 +33,7 @@ module.exports = function (context, req) {
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
+            body: "G'Day " + (req.query.name || req.body.name)
         };
     }
     else {

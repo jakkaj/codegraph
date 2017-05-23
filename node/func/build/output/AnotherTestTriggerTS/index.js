@@ -18,9 +18,6 @@ var config = g.glue.container.get(contracts.tContracts.IConfigService);
 class runner {
     doRun(context) {
         return __awaiter(this, void 0, void 0, function* () {
-            var c = config.config;
-            var res = JSON.stringify(c);
-            context.log(res);
             var g = yield gremlin.executeAsync('g.V().count()');
             var js = JSON.stringify(g);
             context.log(js);
@@ -35,7 +32,7 @@ module.exports = function (context, req) {
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
+            body: "G'Day " + (req.query.name || req.body.name)
         };
     }
     else {

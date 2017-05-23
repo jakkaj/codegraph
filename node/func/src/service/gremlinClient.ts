@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import * as Gremlin from 'gremlin';
+import * as Gremlin from 'gremlin-secure';
 import { serviceBase, configBase } from "./serviceBase";
 import { IGremlinClient } from "../contract/contracts";
 

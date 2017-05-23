@@ -15,7 +15,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const inversify_1 = require("inversify");
-const Gremlin = require("gremlin");
+const Gremlin = require("gremlin-secure");
 const serviceBase_1 = require("./serviceBase");
 require('dotenv').config();
 let gremlinClient = class gremlinClient extends serviceBase_1.configBase {
